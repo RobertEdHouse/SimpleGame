@@ -1,0 +1,162 @@
+[
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_timer.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\fragment_timer.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_smile.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_smile.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_square.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_square.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_square.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xhdpi\\ic_square.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_gray_button_pressed.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\gray_button_pressed.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_color_buttom_selector.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\color_buttom_selector.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_gray_button_selector.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\gray_button_selector.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\layout_logo.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\logo.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_square.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_square.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_smile.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xhdpi\\ic_smile.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_options.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\fragment_options.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_sprite_0002.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\sprite_0002.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_smile.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-mdpi\\ic_smile.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_resource_void.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\resource_void.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_game.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\fragment_game.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_square.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-hdpi\\ic_square.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_color_button.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\color_button.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_smile.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-hdpi\\ic_smile.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_smile.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\smile.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_smile.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_smile.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_color_button_pressed.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\color_button_pressed.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_square.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-mdpi\\ic_square.png"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_square_vec.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\ic_square_vec.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_gray_button.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\gray_button.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_game_dialog.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\fragment_game_dialog.xml"
+    }
+]
