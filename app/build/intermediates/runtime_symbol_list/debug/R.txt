@@ -2480,6 +2480,7 @@ int drawable design_snackbar_background 0x7f080067
 int drawable gray_button 0x7f080068
 int drawable gray_button_pressed 0x7f080069
 int drawable gray_button_selector 0x7f08006a
+int drawable history 0x7f0800a7
 int drawable ic_clock_black_24dp 0x7f08006b
 int drawable ic_keyboard_black_24dp 0x7f08006c
 int drawable ic_launcher_background 0x7f08006d
@@ -2760,6 +2761,7 @@ int id ignore 0x7f0900d8
 int id ignoreRequest 0x7f0900d9
 int id image 0x7f0900da
 int id imageView 0x7f0900db
+int id imageView2 0x7f0901ef
 int id immediateStop 0x7f0900dc
 int id included 0x7f0900dd
 int id info 0x7f0900de

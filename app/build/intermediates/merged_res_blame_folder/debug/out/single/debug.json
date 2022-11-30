@@ -108,6 +108,10 @@
         "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-hdpi\\ic_square.png"
     },
     {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_history.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\history.png"
+    },
+    {
         "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_color_button.xml.flat",
         "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\color_button.xml"
     },

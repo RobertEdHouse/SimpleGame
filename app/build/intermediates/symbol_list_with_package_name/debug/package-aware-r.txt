@@ -2481,6 +2481,7 @@ drawable design_snackbar_background
 drawable gray_button
 drawable gray_button_pressed
 drawable gray_button_selector
+drawable history
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2761,6 +2762,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id immediateStop
 id included
 id info
