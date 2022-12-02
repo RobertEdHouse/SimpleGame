@@ -35,6 +35,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class LoadSaveClass extends IntentService implements Observable{
@@ -55,7 +56,6 @@ public class LoadSaveClass extends IntentService implements Observable{
     private Observer observer;
     SharedPreferences sPref;
 
-    private IBinder binder = new ServiceBinder();
 
 
     public LoadSaveClass(String name) {
@@ -77,11 +77,7 @@ public class LoadSaveClass extends IntentService implements Observable{
         registerObserver((Observer) observer);
         return super.onStartCommand(intent, flags, startId);
     }
-    @Nullable
-    @Override
-    public IBinder onBind(Intent arg0) {
-        return binder;
-    }
+
     @Override
     public boolean onUnbind(Intent intent) {
         Log.d(TAG, "onUnbind");
@@ -136,6 +132,7 @@ public class LoadSaveClass extends IntentService implements Observable{
         sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
         String savedHistory=sPref.getString(SAVED_TEXT,"");
         SharedPreferences.Editor ed = sPref.edit();
+        String s=savedHistory+history;
         ed.putString(SAVED_TEXT, savedHistory+history);
         if(ed.commit()){
             notifyObservers("Write in File");
@@ -151,16 +148,64 @@ public class LoadSaveClass extends IntentService implements Observable{
 
     private String createHistory(Bundle arg){
         @SuppressLint("SimpleDateFormat")
-        DateFormat dateFormat = new SimpleDateFormat("EEE, MMM d, yyyy HH:mm:ss");
-        String date = dateFormat.format(Calendar.getInstance().getTime());
+        String date = makeDate();
         int time=arg.getInt(TIME);
         String speed = arg.getString(SPEED);
         int score = arg.getInt(SCORE);
 
-        return "\t" + date +"\n"+
-                "Час: " + time +"\n"+
-                "Швидкість: " + speed +"\n"+
-                "Загальний рахунок: " + score +"\n";
+        return "\t"+date +"\n"+
+                "Час: " + time +" с\n"+
+                "Швидкість: " + speed +" с\n"+
+                "Загальний рахунок: " + score +"\n"+"\n";
+    }
+
+    private String makeDate(){
+        Date date = Calendar.getInstance().getTime();
+        String Date=date.getDay()+" ";
+        switch (date.getMonth()){
+            case 1:
+                Date+="січня";
+                break;
+            case 2:
+                Date+="лютого";
+                break;
+            case 3:
+                Date+="березня";
+                break;
+            case 4:
+                Date+="квітня";
+                break;
+            case 5:
+                Date+="травня";
+                break;
+            case 6:
+                Date+="червня";
+                break;
+            case 7:
+                Date+="липня";
+                break;
+            case 8:
+                Date+="серпня";
+                break;
+            case 9:
+                Date+="вересня";
+                break;
+            case 10:
+                Date+="жовтня";
+                break;
+            case 11:
+                Date+="листопада";
+                break;
+            case 12:
+                Date+="грудня";
+                break;
+        }
+        @SuppressLint("SimpleDateFormat")
+        DateFormat dateFormat = new SimpleDateFormat(" yyy");
+        Date += dateFormat.format(Calendar.getInstance().getTime());
+        dateFormat = new SimpleDateFormat("HH:mm:ss");
+        Date +="\n\t"+dateFormat.format(Calendar.getInstance().getTime());
+        return Date;
     }
 
     @Override
@@ -180,10 +225,6 @@ public class LoadSaveClass extends IntentService implements Observable{
         }
     }
 
-    public class ServiceBinder extends Binder {
-        public LoadSaveClass getService() {
-            return LoadSaveClass.this;
-        }
-    }
+
 
 }

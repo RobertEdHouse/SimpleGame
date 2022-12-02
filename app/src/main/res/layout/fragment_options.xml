@@ -94,14 +94,15 @@
         android:text="Розпочати" />
 
 
-
     <ImageView
         android:id="@+id/historyButton"
         android:layout_width="81dp"
         android:layout_height="82dp"
-        android:layout_margin="15dp"
         android:layout_alignParentRight="true"
-        app:srcCompat="@drawable/history"
-        />
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/history" />
 
 </RelativeLayout>

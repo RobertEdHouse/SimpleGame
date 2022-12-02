@@ -2520,6 +2520,7 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable color_buttom_selector
 drawable color_button
 drawable color_button_pressed
+drawable cross
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2693,7 +2694,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id buttonClose
+id buttonClose_history
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3042,6 +3043,7 @@ id test_radiobutton_app_button_tint
 id text
 id text2
 id textEnd
+id textHistory
 id textScore
 id textSpacerNoButtons
 id textSpacerNoTitle
@@ -3771,6 +3773,7 @@ style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
 style ScreenTitle
+style ScrollView
 style ShapeAppearance_Material3_LargeComponent
 style ShapeAppearance_Material3_MediumComponent
 style ShapeAppearance_Material3_NavigationBarView_ActiveIndicator
@@ -3922,9 +3925,6 @@ style TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style TextAppearance_Widget_AppCompat_Toolbar_Title
 style Theme_Android_lab_1
-style Theme_Android_lab_1_AppBarOverlay
-style Theme_Android_lab_1_NoActionBar
-style Theme_Android_lab_1_PopupOverlay
 style Theme_AppCompat
 style Theme_AppCompat_CompactMenu
 style Theme_AppCompat_DayNight

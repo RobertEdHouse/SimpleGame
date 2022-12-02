@@ -28,14 +28,8 @@
         <item name="android:textSize">20sp</item>
         <item name="android:layout_marginTop">12dp</item>
     </style>
-
-    <style name="Theme.Android_lab_1.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="ScrollView">
+        <item name="android:solidColor">"#f8f7a3"</item>
     </style>
-
-    <style name="Theme.Android_lab_1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.Android_lab_1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

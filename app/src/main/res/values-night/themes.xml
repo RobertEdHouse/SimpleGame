@@ -26,7 +26,9 @@
     </style>
     <style name="Button">
         <item name="android:solidColor">"#000000"</item>
-
+    </style>
+    <style name="ScrollView">
+        <item name="android:solidColor">"#f8f7a3"</item>
     </style>
 
 

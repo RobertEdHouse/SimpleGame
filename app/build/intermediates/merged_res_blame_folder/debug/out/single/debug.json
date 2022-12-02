@@ -16,6 +16,10 @@
         "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_square.png"
     },
     {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_cross.png.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\drawable\\cross.png"
+    },
+    {
         "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_square.png.flat",
         "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-xhdpi\\ic_square.png"
     },
