@@ -13,5 +13,7 @@ public interface AppContract {
 
     void toGameScreen(Fragment target);
 
+    void toHistoryScreen(Fragment target);
+
     void cancel();
 }

@@ -15,4 +15,5 @@
     <dimen name="menuItemHeight">52dp</dimen>
     <dimen name="buttonMargin">8dp</dimen>
     <dimen name="bottomButtonsSpace">4dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

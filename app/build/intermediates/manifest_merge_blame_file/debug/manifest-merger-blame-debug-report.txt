@@ -11,7 +11,7 @@
 9-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:5:5-23:19
+11-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:5:5-41:19
 12        android:allowBackup="true"
 12-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -27,46 +27,96 @@
 18-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:10:9-35
 19        android:testOnly="true"
 20        android:theme="@style/Theme.Android_lab_1" >
-20-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:12:9-51
+20-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:11:9-51
 21        <activity
-21-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:13:9-21:20
-22            android:name="com.example.android_lab_1.MainActivity"
-22-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:14:13-41
+21-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:12:9-24:20
+22            android:name="com.example.android_lab_1.LogoActivity"
+22-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:13:13-41
 23            android:exported="true" >
-23-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:15:13-36
-24            <intent-filter>
-24-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:16:13-20:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:17:17-69
-25-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:17:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:19:17-77
-27-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:19:27-74
-28            </intent-filter>
-29        </activity>
+23-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:14:13-36
+24            <meta-data
+24-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:15:13-18:19
+25                android:name="android.app.lib_name"
+25-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:16:17-52
+26                android:value="" />
+26-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:17:17-33
+27
+28            <intent-filter>
+28-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:19:13-23:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:20:17-69
+29-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:20:25-66
 30
-31        <provider
-31-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-32            android:name="androidx.startup.InitializationProvider"
-32-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-33            android:authorities="com.example.android_lab_1.androidx-startup"
-33-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-34            android:exported="false" >
-34-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-35            <meta-data
-35-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-36                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-36-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-37                android:value="androidx.startup" />
-37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-38            <meta-data
-38-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Zver\.gradle\caches\transforms-3\d5e939928ec62ff1c2d0453d7fe42cf5\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-39                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-39-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Zver\.gradle\caches\transforms-3\d5e939928ec62ff1c2d0453d7fe42cf5\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-40                android:value="androidx.startup" />
-40-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Zver\.gradle\caches\transforms-3\d5e939928ec62ff1c2d0453d7fe42cf5\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-41        </provider>
-42    </application>
-43
-44</manifest>
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:22:17-77
+31-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:22:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity
+34-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:25:9-31:20
+35            android:name="com.example.android_lab_1.HistoryActivity"
+35-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:26:13-44
+36            android:exported="false" >
+36-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:27:13-37
+37            <meta-data
+37-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:15:13-18:19
+38                android:name="android.app.lib_name"
+38-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:16:17-52
+39                android:value="" />
+39-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:17:17-33
+40        </activity>
+41        <activity
+41-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:32:9-40:20
+42            android:name="com.example.android_lab_1.MainActivity"
+42-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:33:13-41
+43            android:exported="true" >
+43-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:34:13-36
+44            <intent-filter>
+44-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:35:13-39:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:20:17-69
+45-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:20:25-66
+46
+47                <category android:name="android.intent.category.ALTERNATIVE" />
+47-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:38:17-80
+47-->G:\Projects\SimpleGame\app\src\main\AndroidManifest.xml:38:27-77
+48            </intent-filter>
+49        </activity>
+50
+51        <provider
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+53            android:authorities="com.example.android_lab_1.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\e0b7dcb1a567eb9ff6a1fcd1e9e5bd53\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Zver\.gradle\caches\transforms-3\d5e939928ec62ff1c2d0453d7fe42cf5\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Zver\.gradle\caches\transforms-3\d5e939928ec62ff1c2d0453d7fe42cf5\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Zver\.gradle\caches\transforms-3\d5e939928ec62ff1c2d0453d7fe42cf5\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+61        </provider>
+62
+63        <uses-library
+63-->[androidx.window:window:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\6b736988277996d965983940bbf72321\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+64            android:name="androidx.window.extensions"
+64-->[androidx.window:window:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\6b736988277996d965983940bbf72321\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+65            android:required="false" />
+65-->[androidx.window:window:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\6b736988277996d965983940bbf72321\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+66        <uses-library
+66-->[androidx.window:window:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\6b736988277996d965983940bbf72321\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+67            android:name="androidx.window.sidecar"
+67-->[androidx.window:window:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\6b736988277996d965983940bbf72321\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+68            android:required="false" />
+68-->[androidx.window:window:1.0.0] C:\Users\Zver\.gradle\caches\transforms-3\6b736988277996d965983940bbf72321\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+69    </application>
+70
+71</manifest>

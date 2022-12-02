@@ -1,5 +1,6 @@
 package com.example.android_lab_1.fragments;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -17,6 +18,7 @@ import androidx.annotation.Nullable;
 
 import com.example.android_lab_1.R;
 import com.example.android_lab_1.model.Game;
+import com.example.android_lab_1.service.LoadSaveClass;
 
 import java.util.Random;
 import java.util.Timer;
@@ -110,14 +112,20 @@ public class GameFragment extends BaseFragment{
         }.start();
 
     }
-   private void endGame(){
-       myTimer.cancel();
-       assert getArguments() != null;
-       getArguments().putInt(SCORE,game.getScore());
-       GameDialogFragment dialog = GameDialogFragment.newInstance(getArguments());
-       dialog.show(this.requireActivity().getSupportFragmentManager(), "custom");
-       getAppContract().toOptionsScreen(this);
-   }
+    private void endGame(){
+        myTimer.cancel();
+        assert getArguments() != null;
+        getArguments().putInt(SCORE,game.getScore());
+        GameDialogFragment dialog = GameDialogFragment.newInstance(getArguments());
+
+        LoadSaveClass service=new LoadSaveClass("LoadSave");
+        dialog.registerObserver(service);
+
+        dialog.show(this.requireActivity().getSupportFragmentManager(), "custom");
+
+        dialog.removeObserver(service);
+        getAppContract().toOptionsScreen(this);
+    }
 
     private void createGrid(View view){
 

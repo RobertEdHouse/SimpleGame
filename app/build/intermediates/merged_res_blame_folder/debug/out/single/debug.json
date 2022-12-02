@@ -1,5 +1,9 @@
 [
     {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\navigation_nav_graph.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+    },
+    {
         "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_timer.xml.flat",
         "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\fragment_timer.xml"
     },
@@ -26,6 +30,10 @@
     {
         "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_logo.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\activity_logo.xml"
     },
     {
         "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable_gray_button_pressed.xml.flat",
@@ -78,6 +86,10 @@
     {
         "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
         "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_history.xml.flat",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\activity_history.xml"
     },
     {
         "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",

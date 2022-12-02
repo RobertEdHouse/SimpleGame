@@ -50,8 +50,8 @@ public class OptionsFragment extends BaseFragment{
                     setOptions();
                     getAppContract().toTimerScreen(this);
                 });
-        view.findViewById(R.id.quitButton)
-                .setOnClickListener(v -> this.requireActivity().finish());
+        view.findViewById(R.id.historyButton)
+                .setOnClickListener(v -> getAppContract().toHistoryScreen(this));
         gridSpinner=view.findViewById(R.id.gridSpinner);
         timeSpinner=view.findViewById(R.id.timeSpinner);
         speedSpinner=view.findViewById(R.id.speedSpinner);

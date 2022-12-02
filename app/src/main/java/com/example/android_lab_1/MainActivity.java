@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 
@@ -24,7 +25,8 @@ public class MainActivity extends AppCompatActivity implements AppContract {
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null) {
-            launchFragment(null, new LogoFragment());
+
+            launchFragment(null, new OptionsFragment());
         }
     }
 
@@ -35,13 +37,19 @@ public class MainActivity extends AppCompatActivity implements AppContract {
     @Override
     public void toTimerScreen(Fragment target) {
 
-        launchFragment(target, TimerFragment.newInstance(target.getArguments()));
+       launchFragment(target, TimerFragment.newInstance(target.getArguments()));
 
     }
     @Override
     public void toGameScreen(Fragment target) {
 
         launchFragment(target,GameFragment.newInstance(target.requireArguments()));
+    }
+
+    @Override
+    public void toHistoryScreen(Fragment target) {
+        Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
+        startActivity(intent);
     }
 
     @Override
