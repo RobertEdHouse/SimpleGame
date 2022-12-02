@@ -10,8 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:textSize="60sp"
-        android:text="0" />
+        android:textSize="60sp" />
 
     <Button
         android:id="@+id/quitButton"
@@ -19,5 +18,5 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/timerText"
         android:layout_centerHorizontal="true"
-        android:text="Завершити" />
+        android:text="@string/finish_button_title" />
 </RelativeLayout>

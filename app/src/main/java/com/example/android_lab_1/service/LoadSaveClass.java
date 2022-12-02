@@ -1,42 +1,21 @@
 package com.example.android_lab_1.service;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.IntentService;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.os.Binder;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
-import android.os.IBinder;
-import android.os.Parcelable;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
 
 import com.example.android_lab_1.BuildConfig;
-import com.example.android_lab_1.model.History;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.io.Serializable;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 
 public class LoadSaveClass extends IntentService implements Observable{
 
@@ -52,15 +31,9 @@ public class LoadSaveClass extends IntentService implements Observable{
     private static final String SCORE = "score";
     final String SAVED_TEXT = "saved_text";
 
-    private static final String FILENAME = "fileHistory.txt";
     private Observer observer;
     SharedPreferences sPref;
 
-
-
-    public LoadSaveClass(String name) {
-        super(name);
-    }
     public LoadSaveClass() {
         super("LoadSaveService");
     }
@@ -73,6 +46,7 @@ public class LoadSaveClass extends IntentService implements Observable{
     @Override
     public int onStartCommand(@Nullable Intent intent, int flags,
                               int startId) {
+        assert intent != null;
         Serializable observer=intent.getSerializableExtra("observer");
         registerObserver((Observer) observer);
         return super.onStartCommand(intent, flags, startId);
@@ -132,7 +106,6 @@ public class LoadSaveClass extends IntentService implements Observable{
         sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
         String savedHistory=sPref.getString(SAVED_TEXT,"");
         SharedPreferences.Editor ed = sPref.edit();
-        String s=savedHistory+history;
         ed.putString(SAVED_TEXT, savedHistory+history);
         if(ed.commit()){
             notifyObservers("Write in File");
@@ -159,6 +132,7 @@ public class LoadSaveClass extends IntentService implements Observable{
                 "Загальний рахунок: " + score +"\n"+"\n";
     }
 
+    @SuppressLint("SimpleDateFormat")
     private String makeDate(){
         Date date = Calendar.getInstance().getTime();
         String Date=date.getDay()+" ";

@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 
 import com.example.android_lab_1.LogoActivity;
 import com.example.android_lab_1.R;
+
 
 public class LogoFragment extends BaseFragment implements View.OnTouchListener{
     private Runnable runnable;
@@ -22,7 +22,7 @@ public class LogoFragment extends BaseFragment implements View.OnTouchListener{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        runnable= () -> ((LogoActivity)getActivity()).toMainActivity();;
+        runnable= () -> ((LogoActivity) requireActivity()).toMainActivity();
         handler=new Handler();
         handler.postDelayed(runnable, 3000);
 
@@ -53,7 +53,7 @@ public class LogoFragment extends BaseFragment implements View.OnTouchListener{
     public boolean onTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             handler.removeCallbacks(runnable);
-            ((LogoActivity)getActivity()).toMainActivity();
+            ((LogoActivity) requireActivity()).toMainActivity();
             return true;
         }
         return false;

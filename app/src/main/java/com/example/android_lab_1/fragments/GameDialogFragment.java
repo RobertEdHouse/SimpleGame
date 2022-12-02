@@ -1,9 +1,7 @@
 package com.example.android_lab_1.fragments;
 
-import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.Service;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -15,19 +13,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.android_lab_1.MainActivity;
 import com.example.android_lab_1.R;
-import com.example.android_lab_1.model.History;
 import com.example.android_lab_1.service.LoadSaveClass;
-import com.example.android_lab_1.service.Observable;
 import com.example.android_lab_1.service.Observer;
 
 import java.io.Serializable;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
 
 
 public class GameDialogFragment extends DialogFragment implements Observer, Serializable {
@@ -102,6 +92,6 @@ public class GameDialogFragment extends DialogFragment implements Observer, Seri
         intent.setAction(action);
         intent.putExtras(data);
         intent.putExtra("observer",  this);
-        getActivity().startService(intent);
+        requireActivity().startService(intent);
     }
 }

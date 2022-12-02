@@ -10,7 +10,6 @@ import android.view.Window;
 
 import com.example.android_lab_1.contract.AppContract;
 import com.example.android_lab_1.fragments.GameFragment;
-import com.example.android_lab_1.fragments.LogoFragment;
 import com.example.android_lab_1.fragments.OptionsFragment;
 import com.example.android_lab_1.fragments.TimerFragment;
 

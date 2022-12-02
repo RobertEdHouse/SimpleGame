@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,18 +13,15 @@ import com.example.android_lab_1.service.Observer;
 import java.io.Serializable;
 
 public class HistoryActivity extends AppCompatActivity implements Observer, Serializable {
-    private static transient TextView textHistory;
+    private transient TextView textHistory;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
         ImageView buttonClose = findViewById(R.id.buttonClose_history);
-        buttonClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HistoryActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
+        buttonClose.setOnClickListener(view -> {
+            Intent intent = new Intent(HistoryActivity.this, MainActivity.class);
+            startActivity(intent);
         });
         textHistory=findViewById(R.id.textHistory);
         launchService(LoadSaveClass.ACTION_LOAD_HISTORY);
