@@ -48,6 +48,7 @@ public class GameFragment extends BaseFragment{
     private Game game;
 
     public static GameFragment newInstance(Bundle bundle) {
+
         GameFragment fragment = new GameFragment();
         Bundle args = new Bundle();
         args.putInt(TIME, bundle.getInt(TIME));
@@ -118,12 +119,12 @@ public class GameFragment extends BaseFragment{
         getArguments().putInt(SCORE,game.getScore());
         GameDialogFragment dialog = GameDialogFragment.newInstance(getArguments());
 
-        LoadSaveClass service=new LoadSaveClass("LoadSave");
-        dialog.registerObserver(service);
-
+//        LoadSaveClass service=new LoadSaveClass("LoadSave");
+//        dialog.registerObserver(service);
+//
         dialog.show(this.requireActivity().getSupportFragmentManager(), "custom");
-
-        dialog.removeObserver(service);
+//
+//        dialog.removeObserver(service);
         getAppContract().toOptionsScreen(this);
     }
 

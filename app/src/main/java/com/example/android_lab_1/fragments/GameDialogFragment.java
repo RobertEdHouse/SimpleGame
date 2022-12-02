@@ -4,21 +4,25 @@ import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Service;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.android_lab_1.MainActivity;
 import com.example.android_lab_1.R;
 import com.example.android_lab_1.model.History;
 import com.example.android_lab_1.service.LoadSaveClass;
 import com.example.android_lab_1.service.Observable;
 import com.example.android_lab_1.service.Observer;
 
+import java.io.Serializable;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -26,7 +30,9 @@ import java.util.Calendar;
 import java.util.List;
 
 
-public class GameDialogFragment extends DialogFragment implements Observable {
+public class GameDialogFragment extends DialogFragment implements Observer, Serializable {
+    private static final String TAG =
+            GameDialogFragment.class.getSimpleName();
 
     private static final String TIME = "time";
     private static final String SPEED = "speed";
@@ -35,10 +41,6 @@ public class GameDialogFragment extends DialogFragment implements Observable {
     private int time;
     private String speed;
     private int score;
-
-    private History history;
-
-    private Observer service;
     public GameDialogFragment() {
     }
     public static GameDialogFragment newInstance(Bundle bundle) {
@@ -66,16 +68,11 @@ public class GameDialogFragment extends DialogFragment implements Observable {
                         "Рахунок: "+ score)
                 .setPositiveButton("Добре!", null)
                 .create();
-        notifyObservers();
+        if (getArguments() != null)
+            launchService(LoadSaveClass.ACTION_SAVE_HISTORY, getArguments());
         return builder.create();
     }
 
-//    private History makeHistory(){
-//        @SuppressLint("SimpleDateFormat")
-//        DateFormat dateFormat = new SimpleDateFormat("EEE, MMM d, yyyy '@' HH:mm:ss");
-//        String date = dateFormat.format(Calendar.getInstance().getTime());
-//        return  new History(score,time,speed,date);
-//    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,18 +92,16 @@ public class GameDialogFragment extends DialogFragment implements Observable {
 
 
     @Override
-    public void registerObserver(Observer o) {
-        service=o;
+    public void update(String message) {
+        Log.println(Log.INFO,TAG,message);
     }
 
-    @Override
-    public void removeObserver(Observer o) {
-        service=null;
-    }
+    private void launchService(String action, Bundle data) {
 
-    @Override
-    public void notifyObservers() {
-        if(service!=null)
-            service.saveHistory(history);
+        Intent intent = new Intent(this.getActivity(), LoadSaveClass.class);
+        intent.setAction(action);
+        intent.putExtras(data);
+        intent.putExtra("observer",  this);
+        getActivity().startService(intent);
     }
 }
