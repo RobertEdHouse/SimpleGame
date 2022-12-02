@@ -13,7 +13,7 @@ import com.example.android_lab_1.service.Observer;
 import java.io.Serializable;
 
 public class HistoryActivity extends AppCompatActivity implements Observer, Serializable {
-    private transient TextView textHistory;
+    private static transient TextView textHistory;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

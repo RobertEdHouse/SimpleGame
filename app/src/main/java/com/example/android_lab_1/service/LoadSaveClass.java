@@ -29,6 +29,7 @@ public class LoadSaveClass extends IntentService implements Observable{
     private static final String TIME = "time";
     private static final String SPEED = "speed";
     private static final String SCORE = "score";
+
     final String SAVED_TEXT = "saved_text";
 
     private Observer observer;
@@ -198,7 +199,5 @@ public class LoadSaveClass extends IntentService implements Observable{
             observer.update(message);
         }
     }
-
-
 
 }
