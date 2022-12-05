@@ -39,4 +39,5 @@ public class HistoryActivity extends AppCompatActivity implements Observer, Seri
         intent.putExtra("observer",  this);
         startService(intent);
     }
+
 }

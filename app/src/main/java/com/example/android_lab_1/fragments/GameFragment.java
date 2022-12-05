@@ -63,11 +63,15 @@ public class GameFragment extends BaseFragment{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        time= getArguments() != null ? getArguments().getInt(TIME) : 0;
-        rows=getArguments().getInt(ROWS);
-        columns=getArguments().getInt(COLUMNS);
-        intervalStart=getArguments().getFloat(INTERVAL_START);
-        intervalFinish=getArguments().getFloat(INTERVAL_FINISH);
+        Bundle bundle=getArguments();
+        if(savedInstanceState!=null)
+            bundle=savedInstanceState;
+        time= bundle!= null ? bundle.getInt(TIME) : 0;
+        assert bundle != null;
+        rows=bundle.getInt(ROWS);
+        columns=bundle.getInt(COLUMNS);
+        intervalStart=bundle.getFloat(INTERVAL_START);
+        intervalFinish=bundle.getFloat(INTERVAL_FINISH);
     }
     @Nullable
     @Override

@@ -3341,7 +3341,9 @@ int string error_icon_content_description 0x7f110025
 int string exposed_dropdown_menu_content_description 0x7f110026
 int string fab_transformation_scrim_behavior 0x7f110027
 int string fab_transformation_sheet_behavior 0x7f110028
+int string finish_button_title 0x7f11008e
 int string first_fragment_label 0x7f110029
+int string grid_title 0x7f11008f
 int string hello_blank_fragment 0x7f11002a
 int string hello_first_fragment 0x7f11002b
 int string hello_second_fragment 0x7f11002c
@@ -3440,8 +3442,13 @@ int string path_password_strike_through 0x7f110088
 int string previous 0x7f110089
 int string search_menu_title 0x7f11008a
 int string second_fragment_label 0x7f11008b
+int string speed_title 0x7f110090
+int string start_button_title 0x7f110091
 int string status_bar_notification_info_overflow 0x7f11008c
+int string time_title 0x7f110092
 int string title_activity_history 0x7f11008d
+int string title_logo 0x7f110093
+int string title_result 0x7f110094
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style AndroidThemeColorAccentYellow 0x7f120002

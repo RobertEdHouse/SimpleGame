@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_options.xml",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\fragment_options.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_history.xml",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\activity_history.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_timer.xml",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\fragment_timer.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_logo.xml",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\activity_logo.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\logo.xml",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\logo.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_game.xml",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\fragment_game.xml"
+    },
+    {
+        "merged": "G:\\Projects\\SimpleGame\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_game_dialog.xml",
+        "source": "G:\\Projects\\SimpleGame\\app\\src\\main\\res\\layout\\fragment_game_dialog.xml"
+    }
+]

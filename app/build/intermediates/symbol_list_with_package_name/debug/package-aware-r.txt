@@ -3342,7 +3342,9 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string finish_button_title
 string first_fragment_label
+string grid_title
 string hello_blank_fragment
 string hello_first_fragment
 string hello_second_fragment
@@ -3441,8 +3443,13 @@ string path_password_strike_through
 string previous
 string search_menu_title
 string second_fragment_label
+string speed_title
+string start_button_title
 string status_bar_notification_info_overflow
+string time_title
 string title_activity_history
+string title_logo
+string title_result
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

@@ -83,11 +83,11 @@ public class LoadSaveClass extends IntentService implements Observable{
             throws InterruptedException {
         switch (action) {
             case ACTION_SAVE_HISTORY:
-                    saveHistory(intent);
-                        Log.d(TAG, "Save History!");
+                saveHistory(intent);
+                Log.d(TAG, "Save History!");
                 break;
             case ACTION_LOAD_HISTORY:
-                        readFile();
+                readFile();
                 break;
             default:
                 throw new RuntimeException("Unknown action!");
@@ -107,7 +107,7 @@ public class LoadSaveClass extends IntentService implements Observable{
         sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
         String savedHistory=sPref.getString(SAVED_TEXT,"");
         SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT, savedHistory+history);
+        ed.putString(SAVED_TEXT, history+savedHistory);
         if(ed.commit()){
             notifyObservers("Write in File");
         }
