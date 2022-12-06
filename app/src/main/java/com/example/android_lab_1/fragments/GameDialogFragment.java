@@ -15,7 +15,6 @@ import android.view.ViewGroup;
 
 import com.example.android_lab_1.R;
 import com.example.android_lab_1.service.LoadSaveClass;
-import com.example.android_lab_1.service.Observer;
 
 import java.io.Serializable;
 
