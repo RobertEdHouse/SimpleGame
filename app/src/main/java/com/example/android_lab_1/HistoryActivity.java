@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android_lab_1.service.LoadSaveClass;
+
+import com.example.android_lab_1.task.LoadSaveThread;
+import com.example.android_lab_1.task.Observer;
 
 import java.io.Serializable;
 
@@ -23,7 +25,7 @@ public class HistoryActivity extends AppCompatActivity implements Observer, Seri
             startActivity(intent);
         });
         textHistory=findViewById(R.id.textHistory);
-        launchService(LoadSaveClass.ACTION_LOAD_HISTORY);
+        loadHistory();
     }
 
 
@@ -32,11 +34,11 @@ public class HistoryActivity extends AppCompatActivity implements Observer, Seri
        textHistory.setText(message);
     }
 
-    private void launchService(String action) {
-        Intent intent = new Intent(this, LoadSaveClass.class);
-        intent.setAction(action);
-        intent.putExtra("observer",  this);
-        startService(intent);
+    private void loadHistory(){
+        LoadSaveThread thread= new LoadSaveThread();
+        thread.registerObserver(this);
+        thread.loadHistory();
+        thread.start();
     }
 
 }

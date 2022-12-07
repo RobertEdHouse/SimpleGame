@@ -1,5 +1,6 @@
 package com.example.android_lab_1.fragments;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
@@ -14,9 +15,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.android_lab_1.R;
-import com.example.android_lab_1.service.LoadSaveClass;
+import com.example.android_lab_1.task.LoadSaveThread;
+import com.example.android_lab_1.task.Observer;
 
 import java.io.Serializable;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 
 public class GameDialogFragment extends DialogFragment implements Observer, Serializable {
@@ -57,11 +63,19 @@ public class GameDialogFragment extends DialogFragment implements Observer, Seri
                         "Рахунок: "+ score)
                 .setPositiveButton("Добре!", null)
                 .create();
-        if (getArguments() != null)
-            launchService(LoadSaveClass.ACTION_SAVE_HISTORY, getArguments());
+
+        if (getArguments() != null){
+            saveHistory();
+        }
         return builder.create();
     }
-
+    private void saveHistory(){
+        LoadSaveThread thread= new LoadSaveThread();
+        thread.registerObserver(this);
+        String history=createHistory(getArguments());
+        thread.saveHistory(history);
+        thread.start();
+    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,12 +99,66 @@ public class GameDialogFragment extends DialogFragment implements Observer, Seri
         Log.println(Log.INFO,TAG,message);
     }
 
-    private void launchService(String action, Bundle data) {
+    private String createHistory(Bundle arg){
+        @SuppressLint("SimpleDateFormat")
+        String date = makeDate();
+        int time=arg.getInt(TIME);
+        String speed = arg.getString(SPEED);
+        int score = arg.getInt(SCORE);
 
-        Intent intent = new Intent(this.getActivity(), LoadSaveClass.class);
-        intent.setAction(action);
-        intent.putExtras(data);
-        intent.putExtra("observer",  this);
-        requireActivity().startService(intent);
+        return "\t"+date +"\n"+
+                "Час: " + time +" с\n"+
+                "Швидкість: " + speed +" с\n"+
+                "Загальний рахунок: " + score +"\n"+"\n";
+    }
+
+    @SuppressLint("SimpleDateFormat")
+    private String makeDate(){
+        Date date = Calendar.getInstance().getTime();
+        String Date=date.getDay()+" ";
+        switch (date.getMonth()){
+            case 1:
+                Date+="січня";
+                break;
+            case 2:
+                Date+="лютого";
+                break;
+            case 3:
+                Date+="березня";
+                break;
+            case 4:
+                Date+="квітня";
+                break;
+            case 5:
+                Date+="травня";
+                break;
+            case 6:
+                Date+="червня";
+                break;
+            case 7:
+                Date+="липня";
+                break;
+            case 8:
+                Date+="серпня";
+                break;
+            case 9:
+                Date+="вересня";
+                break;
+            case 10:
+                Date+="жовтня";
+                break;
+            case 11:
+                Date+="листопада";
+                break;
+            case 12:
+                Date+="грудня";
+                break;
+        }
+        @SuppressLint("SimpleDateFormat")
+        DateFormat dateFormat = new SimpleDateFormat(" yyy");
+        Date += dateFormat.format(Calendar.getInstance().getTime());
+        dateFormat = new SimpleDateFormat("HH:mm:ss");
+        Date +="\n\t"+dateFormat.format(Calendar.getInstance().getTime());
+        return Date;
     }
 }

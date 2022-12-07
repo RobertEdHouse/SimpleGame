@@ -39,10 +39,6 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <service
-            android:name=".service.LoadSaveClass"
-            android:exported="false">
-        </service>
 
     </application>
 

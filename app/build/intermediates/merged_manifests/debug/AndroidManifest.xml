@@ -48,11 +48,6 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name="com.example.android_lab_1.service.LoadSaveClass"
-            android:exported="false" >
-        </service>
-
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.example.android_lab_1.androidx-startup"
